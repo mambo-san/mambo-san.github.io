@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem "jekyll"
+gem "jekyll-remote-theme"
 gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
 group :jekyll_plugins do
 end
