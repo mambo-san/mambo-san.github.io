@@ -1,6 +1,7 @@
 source "https://rubygems.org"
-gem "jekyll"
-gem "jekyll-remote-theme"
-gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "webrick"
 group :jekyll_plugins do
 end

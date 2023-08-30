@@ -1,5 +1,4 @@
 # mambo-san.github.io
 Mambo-san dev log
 
- 
-bundle exec jekyll serve
+Modification to \_config.yml requires 'bundle exec jekyll serve' to reflect change.
