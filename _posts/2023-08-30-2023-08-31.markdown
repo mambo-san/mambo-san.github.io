@@ -1,0 +1,60 @@
+---
+title: 2023-08-31
+#layout: default
+---
+
+First Post 
+==========
+
+
+This website will be used as my "Devlog" to record my progress in learning Unity and general game development techniques.
+My hope is that this devlog will serve me as a tool to get me in a habit of documenting my progress. i.e. For when I eventually start a devlog on [itch.io](https://itch.io/).
+
+
+### Learned this month
+
+1. The very basic:
+
+
+    ![Alt Text](\asset\recording\2023_08\gif01.gif)
+    - Transform
+    - Rigid-body
+    - Mesh
+    - Canvas
+    - Camera (split screen)
+    - Built-in recording tool
+
+2. More basic stuff
+
+    ![Alt Text](\asset\recording\2023_08\gif02.gif)
+    - Collision detection
+    - Spawn Manger
+    - Event Listener 
+    - Scene Manger (to reload scene)
+
+3. How to prototype 
+    - Using place holder assets
+    - Implement minimal mechanics such as...
+
+        - "Meow" to make friends (purple bubble indicates range)
+    ![Alt Text](\asset\recording\2023_08\gif03.gif)
+        -  Power-up to increase range
+	![Alt Text](\asset\recording\2023_08\gif04.gif)
+
+		- "Enemy" to eat your friends
+	![Alt Text](\asset\recording\2023_08\gif05.gif)
+
+4. Deploying this website
+- Jekyll
+- *Minimal Mistakes* template and how to use liveReload.js
+- Configuring git.io to auto deploy Jekyll project
+
+
+
+### Next month goal
+
+
+| Goal | Description |
+| ----------- | ----------- |
+| Blender | Learn something about Blender |
+| Unity | Complete Programmer 2 course. |
