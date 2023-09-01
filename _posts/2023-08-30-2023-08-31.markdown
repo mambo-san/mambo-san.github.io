@@ -8,7 +8,9 @@ First Post
 
 
 This website will be used as my "Devlog" to record my progress in learning Unity and general game development techniques.
-My hope is that this devlog will serve me as a tool to get me in a habit of documenting my progress. i.e. For when I eventually start a devlog on [itch.io](https://itch.io/).
+My hope is that this devlog will serve as a tool to get myself in a habit of documenting my progress. i.e. For when I eventually start a devlog on [itch.io](https://itch.io/).
+
+Maybe I'll inspire other middle aged developers to start game development!
 
 
 ### Learned this month

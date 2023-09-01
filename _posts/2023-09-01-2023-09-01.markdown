@@ -1,0 +1,31 @@
+---
+title: 2023-09-01
+#layout: default < -- Defined by front matter in _config.yml
+---
+
+## Pachinko Prototype
+
+Created another [Kusoge](https://en.wikipedia.org/wiki/Kusoge) starting from a simple game mechanic: Count a ball when it goes in a box.
+
+[Published on Unity WebGL](https://play.unity.com/mg/other/webgl_build-198) (for PC)
+ 
+![Alt Text](\asset\recording\2023_09\basic_gameplay.gif)
+
+Not bad for a game made in 4 hours (8 hours if you include every minutes pondering about the game in the shower, lunch break, grocery shopping, or while waiting for instant noodle to cook).
+
+The most annoying feature to implement was the synchronized movement of the moving launchpad and the power indicator.
+ 
+![Alt Text](\asset\recording\2023_09\sync_issue_before.gif)
+
+- The slider values are from 0.0 ~ 1.0.
+- The launchpad y axis range was something like 2.75 ~ 3.60.
+
+![Alt Text](\asset\recording\2023_09\sync_issue_after.gif)
+
+- I've "fixed" it by applying magical speed multiplier to both the launchpad and the slide.
+- In the above gif, the launchpad and slide knows nothing about each other.
+- Hindsight, I should have added EventListener on the launchpad so every time slide value change, I can do something like:
+	- lauchpad.y = starting_y + (slider.value * multiplier)
+
+--------
+You live and learn (hopefully)
