@@ -14,6 +14,7 @@ Created another [Kusoge](https://en.wikipedia.org/wiki/Kusoge) starting from a s
 Not bad for a game made in 4 hours (8 hours if you include every minutes pondering about the game in the shower, lunch break, grocery shopping, or while waiting for instant noodle to cook).
 
 The most annoying feature to implement was the synchronized movement of the moving launchpad and the power indicator.
+(Did not intend this post to contain NSFW content but here we are)
  
 ![Alt Text](\asset\recording\2023_09\sync_issue_before.gif)
 

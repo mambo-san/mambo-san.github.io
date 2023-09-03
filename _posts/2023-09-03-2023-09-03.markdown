@@ -1,0 +1,115 @@
+---
+title: 2023-09-03
+#layout: post
+---
+
+Persistent Data
+===============
+
+
+The mission today was to learn about persistent data between Scene and Session. The 2 simple scenes used to experiment were:
+- Menu UI - To enter username
+- Game UI - Displays username next to the score as well as all time high score.
+
+### Scene Data Persistence
+
+Example: Username (mambo) entered in the UI scene is passed on to the game scene.
+
+![Alt Text](\asset\recording\2023_09\persistSceneData.gif)
+
+- Use singleton on Game Manager or any static class to store variable.
+- The singleton GameObject should be loaded in the initial scene (Scene index 0) for most scenarios. 
+- Flag parent GameObject as "do not destroy on load" to persist cross different scenes.
+
+```csharp
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+```
+
+
+
+### Session Data Persistence
+
+Example: Previous high score from "mambo" is now displayed when E.T. starts a new game.  
+
+![Alt Text](\asset\recording\2023_09\persistSessionData.gif)
+
+- E.T anatomy does not allow him(?) to play on human keyboard.
+- Since the data is small, I opted for file based (JSON) saving mechanism.
+
+    1. Create ***serializable*** inner class to hold information if using JSON format.
+    ```csharp
+    [Serializable]
+    private class SaveData
+    {
+                public string playerName;
+                public int score;
+    }
+    ```
+
+    2. Unity recommends storing these data to [persistentDataPath](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html). This file persists between game play.
+    ```csharp
+    public void SaveHighScore(string highScorePlayer, int newHighScore)
+    {
+                SaveData data = new SaveData();
+                data.playerName = highScorePlayer;
+                data.score = newHighScore;
+
+                string path = Application.persistentDataPath + "/saveData.json";
+                string json = JsonUtility.ToJson(data);
+                File.WriteAllText(path, json);
+    }
+    ```
+
+    3. Similarly, do the reverse for loading. 
+    ```csharp
+    public void LoadSaveData()
+    {
+                string path = Application.persistentDataPath + "/saveData.json";
+                if (File.Exists(path))
+                {
+                        string json = File.ReadAllText(path);
+                        SaveData data = JsonUtility.FromJson<SaveData>(json);
+                        Instance.HighScore = data.score;
+                        Instance.HighScorePlayer = data.playerName;
+                }
+    }
+    ```
+
+
+>_Tip: Use null check on any class using the Instance so you can individually run the scene_
+
+```csharp
+//Inside UI script in the second scene
+void Start() 
+    {
+        //For dev mode: in case we want to skip main menu
+        if (MainManager.Instance != null)
+        {
+            HighScoreText.text = $"Best score: {MainManager.Instance.HighScore}";
+        }
+    }
+```
+
+### Misc: Dev Mode (Conditional Compilation)
+
+- The following snippet uses conditional compilation to do perform different operation based on where the application is running. 
+
+```csharp
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
+
+    public void Exit()
+    {
+        MainManager.Instance.SaveColor();
+#if UNITY_EDITOR
+        EditorApplication.ExitPlaymode();
+#else
+        Application.Quit();
+#endif
+    }
+```
