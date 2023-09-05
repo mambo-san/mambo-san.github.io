@@ -28,7 +28,7 @@ Let's say my game is running like dog poop and I need to improve the FPS.
 ![Alt Text](\asset\recording\2023_09\Profile_example_hierachy.png)
 
 
->Side note: Formula for calculating the "time budget":
+>Side note: Formula for calculating the "Frame Budget" (also called Time Budget):
 - Targeting 30FPS = (1000 ms / 30 fps) = time budget of 33.33 ms per frame
 - Targeting 60FPS = (1000 ms / 60 fps) = time budget of 16.33 ms per frame
 
