@@ -1,0 +1,34 @@
+---
+title: 2023-09-05
+#layout: post
+---
+
+How to profile FPS with Unity
+=========================
+
+Let's say my game is running like dog poop and I need to improve the FPS.
+(20,000 shopping carts moving around aimlessly within a boundary)
+![Alt Text](\asset\recording\2023_09\Profile_sample.gif)
+
+1. In Unity: Window -> analysis -> Profiler (or Ctrl+7)
+2. Start the game (make sure the red recording toggle is switched on!)
+3. Clicking on the graph on the Profile Mechanic (E.g. CPU Usage) will open the Timeline:
+
+![Alt Text](\asset\recording\2023_09\Profile_example.png)
+
+4. Identify the biggest bottleneck using the graph section
+5. Identify the culprit script(s) using the timeline section.
+6. Add new tags in the culprit script to profile a snippet of code, then repeat the test.
+```csharp
+        Profiler.BeginSample("Move");
+        Move();
+        Profiler.EndSample();
+```
+7. Change the "timeline" to "Hierarchy" view and drill down of the script:
+![Alt Text](\asset\recording\2023_09\Profile_example_hierachy.png)
+
+
+>Side note: Formula for calculating the "time budget":
+- Targeting 30FPS = (1000 ms / 30 fps) = time budget of 33.33 ms per frame
+- Targeting 60FPS = (1000 ms / 60 fps) = time budget of 16.33 ms per frame
+

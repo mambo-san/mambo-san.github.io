@@ -3,7 +3,7 @@ title: 2023-09-01
 #layout: default < -- Defined by front matter in _config.yml
 ---
 
-## Pachinko Prototype
+## Prototype: Pachinko 
 
 Created another [Kusoge](https://en.wikipedia.org/wiki/Kusoge) starting from a simple game mechanic: Count a ball when it goes in a box.
 
