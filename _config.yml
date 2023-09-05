@@ -125,10 +125,10 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
-    - label: "Instagram (film phtograpy)"
+    - label: "Insta (phtograpy)"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/tkm.photo.diary/"
-    - label: "Instagram (random patterns)"
+    - label: "Insta (patterns)"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/mambo.jp.vn.nz/"
 
