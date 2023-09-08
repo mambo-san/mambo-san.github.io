@@ -1,0 +1,148 @@
+---
+title: 2023-09-10
+#layout: post
+---
+
+
+ProtoType: Chick firework simulator
+=========================
+---------------
+### Game Design
+
+>**Concept**: Click on a "chick" to make it split into smaller chicks (in 3D space).
+
+>**Control**: Mouse clicks
+
+>**Camera**: Fixed 2D
+
+>**Value**: Visually satisfying
+
+>**Budget**: 24 Hours or by Sept 10th whichever comes first.
+
+----------------
+
+### The Game
+
+You can try out the game on [Unity](https://play.unity.com/mg/other/build-lgn) (WebGL for PC)
+- Main UI to configure your simulation:
+	- Spawn Rate: determines how many chicks are spawned
+	- Explosiveness: determine the blast force being applied
+	- Chick type: determines the spawn pattern
+
+![Alt Text](\asset\recording\2023_09\Chick_UI.gif)
+
+- Game Play
+	- Click on Chicken/Chick to make it explode
+	- "Chick Please" to spawn more chicks
+	- "Reset" to change your chick
+
+- Euphemism
+	- None
+
+
+##### Chick type showcase for nerds 
+- Standard Chick:
+
+![Alt Text](\asset\recording\2023_09\Chick_standard.gif)
+
+```csharp
+double radianTick = (360/ numChicksToSpawn) * (Math.PI/180);
+double radius = 10;
+
+for (int i=0; i <numChicksToSpawn; i++)
+{
+        double angle =  radianTick * i;
+        float x = (float) (radius * Math.Cos(angle));
+        float y = (float) (radius * Math.Sin(angle));
+
+        Vector3 offset = new Vector3(x, y, 0);
+        Vector3 pos = transform.position + offset;
+
+        Instantiate(childChick, pos, transform.rotation);
+}
+```
+
+
+- Cross Chick:
+
+![Alt Text](\asset\recording\2023_09\Chick_cross.gif)
+
+```csharp
+float spacing = 1f;
+float distance = 0;
+bool horizontalPlacement = true;
+//Hmmm. There must be a better way to do this ( 　゜，_ゝ゜)
+//1st loop: Right, Left
+//2nd loop: Up, Down
+for (int i = 1; i <= numChicksToSpawn; i++)
+{
+    distance = i * spacing;
+
+    if (horizontalPlacement)
+    {
+        Instantiate(childChick, pos + new Vector3(distance, 0), rotation);
+        i++;
+        if (i < numChicksToSpawn)
+        {
+            Instantiate(childChick, pos + new Vector3(-distance, 0), rotation);
+        }
+        horizontalPlacement = false;
+    }
+    else
+    {
+        Instantiate(childChick, pos + new Vector3(0, distance), rotation);
+        i++;
+        if (i < numChicksToSpawn)
+        {
+            Instantiate(childChick, pos + new Vector3(0, -distance), rotation);
+        }
+        horizontalPlacement = true;
+    }
+}
+```
+
+- Chaotic Chick:
+
+![Alt Text](\asset\recording\2023_09\Chick_chaos.gif)
+
+```csharp
+public override void ClickAction()
+{
+    int numToSpawn = GameManager.Instance.spawnCount;
+    float range = 25;
+    float delayTime = (0.5f/numToSpawn) + 0.02f;
+    StartCoroutine(SpawnChicks(numToSpawn, range, delayTime));
+}
+
+private IEnumerator SpawnChicks(int numToSpawn, float range, float delayTime)
+{
+    for (int i = 0; i < numToSpawn; i++)
+    {
+        SpawnChickAtRandomPos(range);
+        yield return new WaitForSeconds(delayTime);
+    }
+    PushChicksAway(range*2);
+    Destroy(gameObject);
+}
+
+private void SpawnChickAtRandomPos(float range)
+{
+   
+    float posX = Random.Range(-range, range);
+    float posY = Random.Range(-range, range);
+    float posZ = transform.position.z + Random.Range(-range, range); 
+
+    Instantiate(childChick, new Vector3(posX, posY, posZ), transform.rotation);
+}
+```
+-----------------------------------------------
+### Nice to have features:
+- Chicks to have trailing light to make it look like firework
+- Chicks to spawn smaller versions of them-self
+- Dynamically calculate the chicks spacing based on specified number to spawn and it's size.
+- Sound effects
+
+-----------------------------------------------
+>Helpful resource:
+- The [Code Project](https://www.codeproject.com/Articles/9593/Analog-clock-control-in-C)'s tutorial on how to draw clock in C#
+- The [Desmos](https://www.desmos.com/calculator/jmxmtmciah) for tuning spawn rate.
