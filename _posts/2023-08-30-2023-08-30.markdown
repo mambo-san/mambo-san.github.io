@@ -1,6 +1,7 @@
 ---
-title: 2023-08-31
+title: "2023-08-31: First post"
 #layout: default
+tags: Prototype Monthly-update
 ---
 
 First Post 

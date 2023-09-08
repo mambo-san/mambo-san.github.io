@@ -1,6 +1,7 @@
 ---
-title: 2023-09-01
+title: "2023-09-01: Prototype - Pachinko"
 #layout: default < -- Defined by front matter in _config.yml
+tags: Prototype Pachinko Kusoge
 ---
 
 ## Prototype: Pachinko 

@@ -1,11 +1,12 @@
 # main links
 main:
+  - title: "Tag Archive"
+    url: /tag_archive
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: https://youtu.be/P945A5Tndp8?si=1FxFYoLcITZJUuzT
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
