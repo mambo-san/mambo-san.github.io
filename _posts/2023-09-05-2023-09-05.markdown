@@ -1,7 +1,7 @@
 ---
 title: "2023-09-05: How to Profile FPS in Unity"
 #layout: post
-tags: How-to Profile Profiling
+tags: How-to Profiling
 ---
 
 How to profile FPS with Unity
