@@ -1,5 +1,5 @@
 ---
-title: "2023-09-08: Prototype - Chick firework simulator"
+title: "2023-09-08: Prototype - Chick simulator"
 #layout: post
 tags: Prototype
 ---
@@ -22,7 +22,7 @@ tags: Prototype
 
 ### The Game
 
-You can try out the game on [Unity](https://play.unity.com/mg/other/build-lgn) (WebGL for PC)
+You can try out the game on [Unity](https://play.unity.com/mg/other/build-lgn){:target="blank"} (WebGL for PC)
 - Main UI to configure your simulation:
 	- Spawn Rate: determines how many chicks are spawned
 	- Explosiveness: determine the blast force being applied
@@ -143,5 +143,5 @@ private void SpawnChickAtRandomPos(float range)
 
 -----------------------------------------------
 >Helpful resource:
-- The [Code Project](https://www.codeproject.com/Articles/9593/Analog-clock-control-in-C)'s tutorial on how to draw clock in C#
-- The [Desmos](https://www.desmos.com/calculator/jmxmtmciah) for tuning spawn rate.
+- The [Code Project](https://www.codeproject.com/Articles/9593/Analog-clock-control-in-C){:target="blank"}'s tutorial on how to draw clock in C#
+- The [Desmos](https://www.desmos.com/calculator/jmxmtmciah){:target="blank"} for tuning spawn rate.

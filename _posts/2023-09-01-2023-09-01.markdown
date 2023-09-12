@@ -6,9 +6,9 @@ tags: Prototype Pachinko Kusoge
 
 ## Prototype: Pachinko 
 
-Created another [Kusoge](https://en.wikipedia.org/wiki/Kusoge) starting from a simple game mechanic: Count a ball when it goes in a box.
+Created another [Kusoge](https://en.wikipedia.org/wiki/Kusoge){:target="blank"} starting from a simple game mechanic: Count a ball when it goes in a box.
 
-[Published on Unity WebGL](https://play.unity.com/mg/other/webgl_build-198) (for PC)
+[Published on Unity WebGL](https://play.unity.com/mg/other/webgl_build-198){:target="blank"} (for PC)
  
 ![Alt Text](\asset\recording\2023_09\basic_gameplay.gif)
 

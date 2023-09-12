@@ -51,7 +51,7 @@ Example: Previous high score from "mambo" is now displayed when E.T. starts a ne
     }
     ```
 
-    2. Unity recommends storing these data to [persistentDataPath](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html). This file persists between game play.
+    2. Unity recommends storing these data to [persistentDataPath](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html){:target="blank"}. This file persists between game play.
     ```csharp
     public void SaveHighScore(string highScorePlayer, int newHighScore)
     {
