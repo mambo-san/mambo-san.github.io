@@ -1,0 +1,46 @@
+---
+title: "2023-09-12: Blender rite of passage"
+#layout: default < -- Defined by front matter in _config.yml
+tags: Blender
+---
+
+### Donut
+
+After learning the basics of Unity. I thought the next logical step was to learn the basics of Blender. Since I eat pink donuts regularly, it is my fate to try out the [Blender Beginner Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD){:target="blank"}.
+
+The tutorial was easy to follow until it wasn't.
+E.g. Pressing wrong shortcut key and needing to google how to get back to the view port. 
+
+-----------------------------------------
+>Progress after 1 hour:
+
+![Alt Text](\asset\recording\2023_09\Donut1.png)
+
+![Alt Text](\asset\recording\2023_09\Donut3.png)
+
+This is the point where I realized my new fetish: **polygons** and **wire-mesh**. 
+
+I've been zooming in and out, fascinated by the structure.
+
+I feel like I'm missing an opportunity to drop a joke here...I just can't put my finger on it. 
+
+-----------------------------------------
+>Progress after 3 hours:
+
+![Alt Text](\asset\recording\2023_09\Donut_in_the_making.png)
+
+- The reference image on the left top is the [pink donut](https://www.countdown.co.nz/shop/productdetails?stockcode=760505){:target="blank"} that I've been addicted to for the past year.
+
+Oh... just look at that tick icing erupting from the center.
+
+Hmmmm. The joke seems to be on tip of my tongue.
+
+-----------------------------------------
+>Final product after 8 hours (heavily compressed GIF version):
+
+![Alt Text](\asset\recording\2023_09\Donut_final.gif)
+
+-----------------------------------------
+The last half of the tutorial was not relevant to how I'm gonna be using Blender but it might come in handy when I want to record a demo video.
+
+Ah, yes. The [joke](https://youtu.be/ADrBo7u3tR4?t=105) ❤

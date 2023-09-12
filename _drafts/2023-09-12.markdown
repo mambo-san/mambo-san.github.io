@@ -1,5 +1,0 @@
----
-title: 2023-09-12
-#layout: default < -- Defined by front matter in _config.yml
-tags: 
----
