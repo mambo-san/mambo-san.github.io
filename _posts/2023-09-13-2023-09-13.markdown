@@ -1,5 +1,5 @@
 ---
-title: "2023-09-12: Blender rite of passage"
+title: "2023-09-13: Blender rite of passage"
 #layout: default < -- Defined by front matter in _config.yml
 tags: Blender
 ---
