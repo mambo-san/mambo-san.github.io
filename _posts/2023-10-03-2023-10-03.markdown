@@ -1,0 +1,46 @@
+---
+title: "2023-10-03: Gave up on Unity, trying Godot"
+#layout: default < -- Defined by front matter in _config.yml
+tags: Godot
+---
+
+Unrelated to the recent controversy around Unity's new license terms, I gave up on doing "Unity Creative core tutorial".
+- Too much time is required to master Shader & Material for a dude with full-time job.
+- Too specific to Unity.
+- I only want simple [pixelated pussy](\asset\recording\2023_09\Japanese_pussy_cat.jpg) anyway.
+- That could have been a risky click but this website is relatively SFW in case my mom ever decided to drop by.
+- I'll revisit this topic when the need arise.
+
+-----------------
+
+
+### First impression of Godot. 
+
+Below are my thoughts after completing the  ["2D Dodge the creeps"](https://narco-neko.itch.io/just-another-dodge-the-creeps){:target="blank"} tutorial.
+
+- Godot feels like an IDE and much more programmer-friendly compared to Unity.
+- GDScript is dynamically typed with Python like syntax ... and it has **dictionary**... my favorite data type :D
+- Not many video tutorials but good documentation + blazing fast built-in doc search functionality(F1)
+- The vector Y axis is inverted (compared to Unity). Have to keep reminding myself this is Atari and that **negative Y is UP**.
+- The script editor cannot be a separate window (maybe Sublime has syntax/breakpoints support).
+- Instantiating Node (GameObject) and accessing node's property is vastly different and not comparable to Unity.
+- Symbol suggestion/completion for method names using $node_name syntax is not supported :(
+- "Signal" feature looks handy but I can see myself creating a spaghetti code 
+
+Overall, it feels good to develop on Godot and I'll reevaluate once I'm as familiar with Godot as Unity. 
+
+### Bro, September is over, 2023 will be over soon.
+
+Here's the overview of September accomplishment.
+
+![Alt Text](\asset\recording\2023_09\2023_09_progress.jpg)
+
+In October, if I don't get wasted too often, I will...
+- Complete [3D Dodge the creeps tutorial](https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html).
+- Explore visually interesting game concepts (no story line, no assets).
+- Upload test game to itch.io to learn how to make it playable in mobile browser.
+
+---------
+Came across [this cool game](https://ncase.itch.io/wbwwb) on itch.io *5~10min game play*
+
+The method of story telling and the way game gives instructions to the player feels natural.
