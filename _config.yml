@@ -106,13 +106,11 @@ analytics:
 author:
   name             : "Takuma Sato"
   avatar           : "/asset/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Just another cat-obsessed developer trying to learn game development while having a full-time job."
-  location         : "Auckland, New Zealand"
-  email            : #"takuma.sato.nz@gmail.com"
+  bio              : "Just another cat-obsessed ex-developer trying to learn game development while having a full-time job."
+  location         : "Denver, CO, USA"
+  email            : "takuma.sato.nz@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:takuma.sato.nz@email.com"
+
     - label: "Unity Account"
       icon: "fas fa-fw fa-link"
       url: "https://play.unity.com/u/mambo-san"
@@ -131,6 +129,11 @@ author:
     - label: "Insta (patterns)"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/mambo.jp.vn.nz/"
+    - label: "Insta (Baking)"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/baked_japanese_baker/"
+
+
 
 # Site Footer
 footer:
