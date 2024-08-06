@@ -1,0 +1,54 @@
+---
+title: "2024-08-05: Create more than you consume."
+tags: Idea-log Denver Diary
+---
+
+There's a certain fear associated with creating digital content. But this was not one of them. I just realized that there's a typo in my blog title all this time.
+
+Narco Neko ~~Dairy~~ --> Diary
+
+(Yo, that explains why googling my blog never worked)
+
+Did all the readers think this blog was about getting high off feline lactose? Can't believe all you nerds never pointed it out and let me publicly shame myself for this long❤️ʕ ·ᴥ·ʔ✂╰⋃╯ 
+
+Anyways, I've installed Godot on my tiny laptop and I'm ready to continue with the [3D tutorial](https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html) again. The hope is that I can resist the temptation of playing online [Riichi Mahjong](https://en.wikipedia.org/wiki/Japanese_mahjong) after work. 
+
+-----------
+Dever and Denveries has been a very welcoming so far. Hope I continue to make friends till I can call this place my 4th home. 
+[ ![](\asset\recording\2024_08\2024_08_denver_city.jpg)](\asset\recording\2024_08\2024_08_denver_city.jpg)
+
+
+
+<!-- For those Nerds reading my diary through github code, or source page of the website, here's some game ideas that I've been contemplating:
+
+If anyone can generate decent game by entering below ideas in chatGPT, go ahead. You get to make a game, I get to play. Win-win. But if you make money, I will sue you. Don't be a dick❤️ʕ ·ᴥ·ʔ✂╰⋃╯
+
+==========
+PinBall Incremental game
+==========
+- Bring back the nostalgia of Window 95, 3D Pinball: Space Cadet
+- But it's an incremental game to automate the playing experience
+
+==========
+Narco Neko (cat simulator)
+==========
+- Narco Neko can be the main character in a series of mini games. (does not need to be the same cat in every game)
+- This will be a game about a Neko making friends in a new location through narcotic activity (catnip).
+- Need to offend at least few people who plays the game. 
+- A [trippy](https://www.youtube.com/watch?v=5zYOKFjpm9s){:target="blank"} music is a must.
+- I definitely need to learn how to control camera movement more precisely to give various "catnip effects".
+
+==========
+Cat-tower building game (Ninja Warrior)
+==========
+- Not tower defense, you build a CAT-TOWER and have to climb them.
+- Player is given random building blocks, player builds it, then climb it.
+- Point will be rewarded based on height of the tower that player was able to climb. (and items ) 
+
+==========
+Narco Chameleon  
+==========
+- Split screen where each view represents left eye and right eye. 
+- Point and shoot (eat narcotic stuff) 
+
+ -->

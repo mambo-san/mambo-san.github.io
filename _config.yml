@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Narco Neko Dairy"
+title                    : "Narco Neko Diary"
 title_separator          : "-"
 subtitle                 : "Game development to combat mid-life crisis."
 name                     : "Takuma Sato"
