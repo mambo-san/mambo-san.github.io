@@ -1,0 +1,45 @@
+---
+title: "2024-08-09: Godot 3D Tutorial"
+#layout: default < -- Defined by front matter in _config.yml
+tags:
+---
+
+The key object of the 3D tutorial is to learn:
+- Player control 
+- Spawning enemies with some randomness (location/direction/speed)
+- Deleting objects when out of screen
+- Mechanics to squash enemies
+- How UI's are handle in Godot
+- General debugging technique using Godot
+
+![Alt Text](\asset\recording\2024_08\2024_08_mob_movement.gif)
+
+Godot engine's "animation editor" is surprising easy to use and can be used add NPC like movement to 3D models.
+![Alt Text](\asset\recording\2024_08\2024_08_bouncy.gif)
+
+--------------------
+
+
+Is it just me or is Godot's sample character for the 3D tutorial looks like a tentacle beast from some kid's nightmare after consuming [too much Hentai](https://en.wikipedia.org/wiki/The_Dream_of_the_Fisherman%27s_Wife){:target="blank"}. 
+
+![Alt Text](\asset\recording\2024_08\2024_08_all_is_fine.gif)
+
+
+--------------------
+
+[Here's](https://narco-neko.itch.io/godot-3d-tutorial){:target="blank"} the half ass completed 3D tutorial game the you can play (PC only). I'm starting to think Godot is easier to implement game mechanics compare to Unity. Unity is easier to model 3D objects but cumbersome when implementing simple object interactions. 
+
+![Alt Text](\asset\recording\2024_08\2024_08_play.gif)
+
+
+
+
+>September Goal
+
+Create one random game with shitty graphics. I've been doing whiteboard sessions to brain storm ideas for some easy game to develop. [Here's](\asset\recording\2024_08\2024_08_game_idea.jpg) my best idea so far. 
+
+And don't judge me for my slow progress, I've also been learning how to bake [gnarly looking bread](https://www.instagram.com/p/C-dGKe7xOkw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==).
+
+------------------
+>Useful Link
+[How to export godot game for web](https://foosel.net/til/how-to-export-a-godot-4-game-to-run-on-the-web-on-itchio/){:target="blank"}
