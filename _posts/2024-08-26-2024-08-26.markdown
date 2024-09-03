@@ -1,0 +1,47 @@
+---
+title: "2024-09-02 The Commute"
+#layout: default < -- Defined by front matter in _config.yml
+tags: 2D Godot Sprite Animation Platformer itch.io devlog
+---
+
+>Mini-game created: [The Commute](https://narco-neko.itch.io/the-commute){:target="blank"}
+
+![Alt Text](\asset\recording\2024_09\commute.gif)
+
+Key concepts explored
+- Tile map
+- Sprite animation 
+- Text animation (bbcode + popup/fade effect)
+- Signal
+- Camera drag
+- AudioPlayer
+- Level Manger
+- Game Manger
+- Instantiating nodes, swapping nodes
+
+
+>Picking sprite for animation
+
+Found a great website [Kennyey.nl](https://kenney.nl/assets){:target="blank"} to get free 2D/3D assets. 
+I've chosen this [super kawaii tilemap](\asset\recording\2024_09\tilemap_packed.png) to be my companion for learning sprite animation.
+
+The excitement of animating kawaii character quickly faded away as soon I created AnimationPlayer and imported the tilemap... So blur like those videos from Japan and pixels from neighboring tiles are creeping in... :(
+
+![Alt Text](\asset\recording\2024_09\render_blur.png)
+
+After dicking around for few hours I found wise word on some forum.
+
+Project-->Project Setting-->Rendering-->Textures
+
+Set **Default Texture Filter** to ***Nearest***. 
+
+![Alt Text](\asset\recording\2024_09\render_setting.png)
+
+Yaaaaaas. Kawaii three-eyed naked Santa can now be seen clearly. 
+
+![Alt Text](\asset\recording\2024_09\render_clear.png)<span style="font-size:0.4em;">*Time well wasted :)*</span>
+
+--------------------------
+The music is from [Tallbeard](https://tallbeard.itch.io/music-loop-bundle). I'll be using more of his loop music in the future :)
+
+If you like to make fun of project structure with horrible naming conventions, the code is on [GitHub](https://github.com/mambo-san/theCommute/){:target="blank"}. 

@@ -1,7 +1,7 @@
 ---
 title: "2024-08-25: Godot 3D Tutorial"
 #layout: default < -- Defined by front matter in _config.yml
-tags:
+tags: Godot 3D itch.io
 ---
 
 The key object of the 3D tutorial is to learn:
