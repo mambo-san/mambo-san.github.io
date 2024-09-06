@@ -1,7 +1,7 @@
 ---
 title: "2024-09-06 The shroom guy"
 #layout: default < -- Defined by front matter in _config.yml
-tags:
+tags: Godot 2D animation devlog 
 ---
 
 ## Animation Progress
@@ -18,7 +18,7 @@ tags:
 ![Alt Text](\asset\recording\2024_09\pickup_animation_v2.gif)
 
 >Pick up Animation v3
-- Item will "wake up" other surrounding items to apply gravity
+- Picked up item will "wake up" other surrounding items to apply gravity
 ![Alt Text](\asset\recording\2024_09\pickup_animation_v3.gif)
 
 >Pick up Animation v4
@@ -26,6 +26,6 @@ tags:
 - Spews stomach content in FIFO order
 ![Alt Text](\asset\recording\2024_09\pickup_animation_v4.gif)
 
->Shower thoughts
+### Shower thought
 
 This is my first year spending 9/11 in the states. I wondered if American comedians dreads this season or cherish it for their livelihood. 
