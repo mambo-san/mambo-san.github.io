@@ -4,7 +4,7 @@ title: "2024-09-02 The Commute"
 tags: 2D Godot Sprite Animation Platformer itch.io devlog
 ---
 
->Mini-game created: [The Commute](https://narco-neko.itch.io/the-commute){:target="blank"}
+>I made a mini game: [The Commute](https://narco-neko.itch.io/the-commute){:target="blank"}
 
 ![Alt Text](\asset\recording\2024_09\commute.gif)
 

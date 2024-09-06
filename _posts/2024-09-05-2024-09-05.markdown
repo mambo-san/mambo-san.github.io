@@ -1,0 +1,31 @@
+---
+title: "2024-09-05 The shroom guy"
+#layout: default < -- Defined by front matter in _config.yml
+tags:
+---
+
+## Animation Progress
+ 
+>Pick up Animation v1
+- Player will face the item
+- Player will subtly adjust the position to align the animation
+![Alt Text](\asset\recording\2024_09\pickup_animation.gif)
+
+>Pick up Animation v2
+- Item moves on the Y axis to align the pickup motion
+- Item deletes itself
+- Player stomach stores what's been eaten
+![Alt Text](\asset\recording\2024_09\pickup_animation_v2.gif)
+
+>Pick up Animation v3
+- Item will "wake up" other surrounding items to apply gravity
+![Alt Text](\asset\recording\2024_09\pickup_animation_v3.gif)
+
+>Pick up Animation v4
+- Player spews stomach content after eating turd
+- Spews stomach content in FIFO order
+![Alt Text](\asset\recording\2024_09\pickup_animation_v4.gif)
+
+>Shower thoughts
+
+This is my first year spending 9/11 in the states. I wondered if American comedians dreads this season or cherish it for their livelihood. 

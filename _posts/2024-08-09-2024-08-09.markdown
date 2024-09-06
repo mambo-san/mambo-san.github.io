@@ -14,7 +14,7 @@ The key object of the 3D tutorial is to learn:
 
 ![Alt Text](\asset\recording\2024_08\2024_08_mob_movement.gif)
 
-Godot engine's "animation editor" is surprising easy to use and can be used add NPC like movement to 3D models.
+Godot engine's "animation editor" is surprisingly easy to use. E.g. NPC movements to 3D models.
 ![Alt Text](\asset\recording\2024_08\2024_08_bouncy.gif)
 
 --------------------
@@ -27,7 +27,7 @@ Is it just me or is Godot's sample character for the 3D tutorial looks like a te
 
 --------------------
 
-[Here's](https://narco-neko.itch.io/godot-3d-tutorial){:target="blank"} the half ass completed 3D tutorial game the you can play (PC only). I'm starting to think Godot is easier to implement game mechanics compare to Unity. Unity is easier to model 3D objects but cumbersome when implementing simple object interactions. 
+[Here's](https://narco-neko.itch.io/godot-3d-tutorial){:target="blank"} the half ass completed 3D tutorial game you can play (PC only). I'm starting to think Godot is easier to implement game mechanics compare to Unity. Unity is easier to model 3D objects but cumbersome when implementing simple object interactions. 
 
 ![Alt Text](\asset\recording\2024_08\2024_08_play.gif)
 
