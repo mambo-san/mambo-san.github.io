@@ -1,5 +1,5 @@
 ---
-title: "2024-09-05 The shroom guy"
+title: "2024-09-06 The shroom guy"
 #layout: default < -- Defined by front matter in _config.yml
 tags:
 ---
