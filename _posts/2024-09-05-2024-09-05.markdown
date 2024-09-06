@@ -12,7 +12,7 @@ tags: Godot 2D animation devlog
 ![Alt Text](\asset\recording\2024_09\pickup_animation.gif)
 
 >Pick up Animation v2
-- Item moves on the Y axis to align the pickup motion
+- Item moves on the Y axis to align the player pickup motion
 - Item deletes itself
 - Player stomach stores what's been eaten
 ![Alt Text](\asset\recording\2024_09\pickup_animation_v2.gif)
@@ -23,8 +23,10 @@ tags: Godot 2D animation devlog
 
 >Pick up Animation v4
 - Player spews stomach content after eating turd
-- Spews stomach content in FIFO order
+- Spews stomach content in FILO order
 ![Alt Text](\asset\recording\2024_09\pickup_animation_v4.gif)
+
+------------
 
 ### Shower thought
 
