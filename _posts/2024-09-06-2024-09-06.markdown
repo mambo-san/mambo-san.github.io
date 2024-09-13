@@ -1,0 +1,36 @@
+---
+title: "2024-09-12: The Life of NPC"
+#layout: default < -- Defined by front matter in _config.yml
+tags:
+---
+
+>Next project
+
+Recently finished reading the book "Tomorrow and tomorrow and tomorrow" by [Gabrielle Zevin](https://gabriellezevin.com/){:target="blank"}. There were some passage about NPC and thought my next learning project should be about NPC.
+
+>Game concept
+
+- 2D liner platform with some dialog
+- Player can "eat" item such as mushroom
+- In each level, mushroom has different effect on player (or camera)
+- Using the effect, player solved different puzzles in each level.
+- Story about NPC gaining freedom from NPC boundaries. 
+
+>The playable NPC
+
+![](\asset\recording\2024_09\NPC_standing.gif)
+
+>The NPC drama
+![](\asset\recording\2024_09\NPC_drama.gif)
+
+>Rich story
+![](\asset\recording\2024_09\NPC_dialog.png)
+
+------------------
+> #TODO
+
+- Add cute dialog speech sound for characters
+- Create home screen
+- Create dummy level 2
+- Create scene loader for loading next level
+- Esc button to turn on debug mode
