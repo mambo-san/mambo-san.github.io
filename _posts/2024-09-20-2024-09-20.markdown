@@ -1,0 +1,48 @@
+---
+title: "2024-09-20: Life of NPC - update"
+#layout: default < -- Defined by front matter in _config.yml
+tags: PNPC devlog godot
+---
+
+-----------------------------
+
+
+### NPC update
+
+All milestones reached since last update.
+
+- [x] Add cute dialogue speech sounds for characters
+- [x] ~~Create home screen~~ Add level 1 for some story
+- [x] Create dummy level 2
+- [x] Create scene loader for loading the next level
+- [x] ~~Esc button to turn on debug mode~~ Show debug as interactable object
+
+------------------
+
+## debug_to_text feature
+
+![Alt Text](\asset\recording\2024_09\NPC_debug.gif)
+
+
+
+## Dynamic floor
+
+![Alt Text](\asset\recording\2024_09\NPC_moving_floor.gif)
+
+------------
+
+# Next Goal
+
+- [ ] Refactor the item effect code so it's not baked into Player movement code. 
+- [ ] Add drum snare sound for dynamic floor (1 sound source with randomized pitch)
+- [ ] Create level 3: First level with debug enabled
+- [ ] Learn about Godot's Particle system
+- [ ] Create a "NPC Player" that moves around in the background.
+
+-----------
+
+
+
+Maybe I should call this game PNPC (Playable-NPC).
+
+Currently playing visually satisfying incremental game [Gnorp](https://gnorp.dev/)

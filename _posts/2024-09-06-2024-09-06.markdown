@@ -10,20 +10,19 @@ Recently finished reading the book "Tomorrow and tomorrow and tomorrow" by [Gabr
 
 >Game concept
 
-- 2D liner platform with some dialog
-- Player can "eat" item such as mushroom
-- In each level, mushroom has different effect on player (or camera)
-- Using the effect, player solved different puzzles in each level.
-- Story about NPC gaining freedom from NPC boundaries. 
+- 2D linear platformer with some dialogue
+- Player can "eat" item such as mushrooms
+- In each level, mushroom have different effects on player (or camera)
+- Using the effect, player solves different puzzles in each level.
+- The story is about a NPC gaining freedom from NPC boundaries. 
 
 >The playable NPC
-
 ![](\asset\recording\2024_09\NPC_standing.gif)
 
->The NPC drama
+>with NPC jokes
 ![](\asset\recording\2024_09\NPC_drama.gif)
 
->Rich story
+>and a rich story line for those who crave an emotional roller-coaster
 ![](\asset\recording\2024_09\NPC_dialog.png)
 
 ------------------
