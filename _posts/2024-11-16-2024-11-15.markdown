@@ -1,0 +1,32 @@
+---
+title: "2024-11-16 Shower Thought"
+#layout: default < -- Defined by front matter in _config.yml
+tags: shower_thought
+---
+Today's music: [home alone - drive it like you stole it](https://www.youtube.com/watch?v=VbDx4-8VEgs)
+
+
+Since my last post in September, no significant progress on [The Life of NPC](https://narco-neko.itch.io/life-of-npc?secret=XB6xpQJWfHxdFchMArPz7qLwr0) development. I have been procrastinating by watching quite a few inspirational videos from [Sakurai-sensei](https://www.youtube.com/@sora_sakurai_jp) (Producer of Kirby/Smash Brothers). Good reminder that consuming creative content is so much easier than creating the content. I also missed writing in digital format, so here I am. 
+
+September/October has been pretty chill (vibe and temperature wise). Most of my free time was spent on my other hobbies. 
+Summary of Baking and cooking:
+![Summary Photo](\asset\recording\2024_10\Nov_summary.jpg)
+
+Not much happened on Halloween, other than going to the usual bouldering gym as Kawaii axolotl.  
+![Halloween](\asset\recording\2024_10\HW_selfie.jpg)
+
+Experienced first decent snow in Denver. Glad I bought hiking boots.
+![Snowed](\asset\recording\2024_10\Snow.jpg)
+
+I won't complain about the snow tho... I got to see the infamous American surveillance bot: the squirrel. This one seems to be planting a spying device in the public park. This latest model can even cover the device with snow.
+![Squirrel](\asset\recording\2024_10\squirrel.gif)
+
+And yes, and Cheeto is doing fine. He knows how to stay warm.
+![Cheeto](\asset\recording\2024_10\Cheeto_hibernate.jpg)
+
+-------------------
+# Shower thoughts
+
+- Why do we laugh?
+- Does anyone use RSS feed anymore?
+- To bake or to get baked and bake.
