@@ -1,0 +1,48 @@
+---
+title: "2025-10-14: Going Back Home?"
+# layout: default  <-- Defined by front matter in _config.yml
+tags:
+---
+
+Hi,
+
+It's been a minute —  
+Almost a year since my last post.
+
+---
+
+> **Non-technical (personal) update**
+
+I've enjoyed many of the good things Denver has to offer:
+- The outdoors  
+- Climbing gym  
+- Awesome storms  
+- Reach Mahjong folks  
+- Cheesman Park  
+- The *very* strong scent of dog poop on the sidewalks  
+
+But sometimes good things must end to make room for other good things.  
+It's time to “visit” one of my homes.
+
+In this case, that means **moving to Japan**—though I have no clear plan on how long I'll stay, or whether I can truly call it *home* just yet.
+
+I'll be in Japan by the end of 2025.  
+If you're reading this and you're in (or heading to) Japan, let me know!  
+Email is the surest way to reach me :)
+
+---
+
+> **Technical update**
+
+Created a [skeleton webpage](https://narco-neko-playground.onrender.com/) using Flask and deployed it on Render:  
+
+Right now, it's just a site with two buttons:
+- **Button 1**: Game Generator (next project)  
+- **Button 2**: Does nothing (for now)
+
+The Game Generator will eventually allow you to generate an embedded JavaScript game using AI.  
+I've added a basic “captcha” to prevent bots from using it (since each run costs me a small amount per token).
+
+My next post will probably come after the Game Generator is fully working.
+
+Hopefully I can add a few more cool things before I start job hunting :p
