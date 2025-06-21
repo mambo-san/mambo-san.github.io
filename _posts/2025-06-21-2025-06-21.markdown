@@ -1,0 +1,62 @@
+---
+title: "2025-06-21: First demo project"
+tags: Devlog Flask GPT4 NPP playground OpenAI API VS code uptimeRobot Game Genetor demo vibe_coding
+---
+
+-----------------------------
+
+I'm back. 
+
+The first demo project is now live on NNP!
+
+NNP = [Narco Neko Playground](https://narco-neko-playground.onrender.com/){:target="blank"}. 
+
+
+>First Demo: Game generator
+
+The idea for creating a game with AI came up when I asked chatGPT to generate a functioning game using stand-alone HTML file that can be executed locally. 
+The AI created a simple but interesting game called "make_it_rain" based on my prompt. So I decided to convert that HTML into an one time "human authentication" for my project as a joke. The human player has to use "rain" to reveal the hidden text to gain access to the next page. 
+
+
+![Alt Text](\asset\recording\2025_06\make_it_rain.gif)
+
+With that authentication out of the way, humans can now use the game generator. 
+
+>Feature overview
+
+Simple UI to generate standalone HTML game
+
+![Alt Text](\asset\recording\2025_06\game_generator_prompt_screen.png)
+
+AI generates a buggy but mostly functioning game: 
+![Alt Text](\asset\recording\2025_06\game_generator_tetris.gif)
+
+Save your game to Public Game Library
+![Alt Text](\asset\recording\2025_06\game_generator_public_library.png)
+
+User can give +1 or -1 score to the games in the library. If the game score reaches negative 3, the game is deleted from the library. Currently, there are no validations, so user can down vote multiple times to delete anyone's game. I like the idea that anyone *could* destroy anyone’s game — but (hopefully) they don’t... Having faith in humanity, I'm going to call this a feature.
+
+> Observation
+
+- The tool generally works for well-known games like Othello or Tetris.
+- Hit and miss when it comes to creative "new" game. 
+- The API started responding better after I nudged it to include math functions like `sin`, `cos`, or `tan`.
+- Not very good at creating mobile friendly browser game (input handling is too verbose and not enough examples).
+
+> Limitations
+
+- Since the API charges $ per token, I restrict the AI's response to 4000 tokens per call. So the game quality is capped by how well the AI can optimize code within that size limit.
+- For the same reason, I added a rate limiter to control access.
+
+>Tech Stack (and IDE)
+
+ - Flask
+ - Render 
+ - OpenAI API: (4o)
+ - VS code
+
+For anyone interested, all code used for this website is made public on my Github account.
+
+> Next demo project
+
+Next, I’m considering a data visualization project — maybe an interactive graph or map.

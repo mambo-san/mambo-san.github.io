@@ -1,5 +1,6 @@
 # mambo-san.github.io
-Mambo-san dev log
+Mambo-san's dev log
+If you want to become mambo-san, and want to clone my digital diary, read below.
 
 Prerequisite: install Ruby, install bundle.
 \_template used to store templates for sublime package "jekyll package". 
