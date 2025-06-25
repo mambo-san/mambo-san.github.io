@@ -1,0 +1,56 @@
+---
+title: 2025-06-26 Second Demo Project
+#layout: default  <-- Defined by front matter in _config.yml
+tags: Devlog Flask GPT4 NPP playground OpenAI API demo projects vibe_coding map D3.js
+---
+
+Pushed my second project’s skeleton code to NNP!
+
+**NNP =** [Narco Neko Playground](https://narco-neko-playground.onrender.com/){:target="blank"}
+
+> **Second Demo: World Dashboard**
+
+I can't be the only one who occasionally feels a tinge of embarrassment for not knowing what’s going on in the world — especially when talking to remote colleagues and clients. I thought this would be a fun way to learn a bit more about global events and geography.
+
+---
+
+> **Project Objective**
+
+- An interactive map to explore current events
+- Let information be discovered — not force-fed
+- A tool for learning geography (e.g., “Where the fk is Rwanda?”)
+
+---
+
+> **Current Features**
+
+You can admire the spinning globe and find Congo.
+
+![Globe Screenshot](\asset\recording\2025_06\world_dashboard_country_selection.png)
+
+Selecting a country shows its flag and local time difference.
+
+![Country Selected Screenshot](\asset\recording\2025_06\world_dashboard_country_selected.png)
+
+Pretty stoked with the progress I’ve made in just two days (after work).
+
+---
+
+## Tools & APIs Used
+- [x] D3.js (globe rendering, interaction)
+- [x] FlagCDN (flag images)
+- [ ] TBD: One of the News APIs...
+- [ ] TBD: Holiday API or database
+
+---
+
+## Known Issues / TODOs
+- [ ] Add loading indicator for flag and data fetch
+- [ ] Integrate real news (headlines) per country
+- [ ] Display full time zone label and use `datetime` instead of just hour
+- [ ] Think about where to fetch holiday data
+- [ ] Bunch more UI improvements:
+    - [ ] Keep selected country highlighted
+    - [ ] Background lightweight animation
+    - [ ] Zoom or animation on the flag
+- [ ] And maybe... an AI button that describes the country

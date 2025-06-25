@@ -53,6 +53,7 @@ User can give +1 or -1 score to the games in the library. If the game score reac
  - Flask
  - Render 
  - OpenAI API: (4o)
+ - Postgres
  - VS code
 
 For anyone interested, all code used for this website is made public on my Github account.
