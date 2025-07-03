@@ -1,0 +1,86 @@
+---
+title: 2025-07-02 World Dashboard is ready :)
+#layout: default  <-- Defined by front matter in _config.yml
+tags: Devlog Flask NPP playground map API demo projects vibe_coding map D3.js news gnews
+---
+
+> Published 2nd demo project
+
+World Dashboard has been added to [NNP](https://narco-neko-playground.onrender.com/world_dashboard/){:target="blank"}
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_overview.gif)
+
+It's a simple mobile friendly(-ish) tool to find data about a country.
+The background color shift is roughly aligned with the actual time zone. 
+
+## Basic features
+
+>Search Country
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_search_country.gif)
+
+>Or click on a map
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_click_country.gif)
+
+> Time zone based on clicked location
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_timezone.gif)
+
+> Portugal stares at you
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_portugal_face.png)
+
+
+## Learning & future TODOs
+
+>Fake News
+
+Reliable information is expensive.
+
+E.g. Below code fetches news heading from (free-tier) GNews API with keyword "Japan":
+
+```python
+try:
+        api_key = os.getenv("GNEWS_API_KEY")
+        url = "https://gnews.io/api/v4/top-headlines"
+        params = {
+            "q": country_name,
+            "lang": "en",
+            "max": 6,
+            "token": api_key
+        }
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+
+        articles = response.json().get("articles", [])
+        trimmed = [
+            {"title": a["title"], "url": a["url"]}
+            for a in articles if a.get("title") and a.get("url")
+        ]
+
+        return jsonify(trimmed)
+```
+
+And if it does not find any, it returns click baits and PewDiePie from random news source.
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_gnews_sample.png)
+
+So, I decided to give up and replaced it with good old wiki summary for now.
+
+![Alt Text](\asset\recording\2025_06\world_dashboard_wiki_sample.png)
+
+
+>More Polishing ideas (which I won't get around to)
+
+- Include city data for better search capability
+- "Random Country" button
+- Learn wikiQuery to fetch stats such as population
+- Smooth out the background color change
+- Red marker to be opaque when behind globe 
+
+>Known bugs:
+
+- The search field does not get updated when user clicks on another country
+- Mobile control (show/hide country info) needs refinement
+- Animation for jumping to country sometimes spins the globe instead of taking the shortest path. 
