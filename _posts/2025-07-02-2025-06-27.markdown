@@ -81,6 +81,7 @@ So, I decided to give up and replaced it with good old wiki summary for now.
 
 >Known bugs:
 
+- "Today" in the public holiday is using UTC instead of browser local time.
 - The search field does not get updated when user clicks on another country
 - Mobile control (show/hide country info) needs refinement
 - Animation for jumping to country sometimes spins the globe instead of taking the shortest path. 
