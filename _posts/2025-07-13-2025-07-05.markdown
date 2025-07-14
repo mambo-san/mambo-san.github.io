@@ -1,0 +1,48 @@
+---
+title: "2025-07-17: Particle Simulator"
+#layout: default < -- Defined by front matter in _config.yml
+tags: Simulator devlog vibe_coding life algorithm generator openGL javascript screensaver
+---
+
+---
+
+> Published my 3rd demo project
+
+Credit where it's due.
+
+I got the inspiration for this project after watching [this YouTube video](https://www.youtube.com/watch?v=4vk7YvBYpOs&t=883s&ab_channel=DigitalGenius){:target="blank"}.  
+I also found several browser-based examples online, including this beautifully designed, high-performance simulator: [sandbox-science.com/particle-life](https://sandbox-science.com/particle-life){:target="blank"}
+.
+
+So I decided to create my own—mostly as a way to refresh my programming muscles.
+
+👉 [NNP - Narco Neko Playground](https://narco-neko-playground.onrender.com/){:target="blank"}
+
+Not bad for a first simulator attempt, I think.  
+(The last one I built was a Game of Life implementation—over a decade ago at university.)
+
+![Alt Text](/asset/recording/2025_07/ps_overview.gif)
+
+---
+
+I really enjoyed the creative process. It even made me reconsider my career path.
+
+Lately, I’ve been diving into the world of artificial life. Watching and reading [Dr. Takashi Ikegami's interviews on artificial life](https://www.youtube.com/watch?v=YQtH5KjT0bU&ab_channel=DGLab){:target="blank"} was fascinating. There’s way more serious research in this area than I expected—blending science, art, and philosophy.
+
+During my research, I also stumbled upon [this simulation](https://www.youtube.com/watch?v=N3tRFayqVtk&t=2512s&ab_channel=davidrandallmiller){:target="blank"}
+, which sparked the idea of defining particle behavior using simple DNA-like rule structures.  
+My [next project](https://narco-neko-playground.onrender.com/nca_simulation/){:target="blank"}
+ explores that idea—a neural cellular automaton simulator I'm "vibe coding" in JavaScript. I've got the basic framework ready but needs lot more refactoring and algorithm checks, before I start fine tuning the rules. 
+
+I might actually learn a thing or two about optimizing rule definitions, emergent intelligence, and what it means to *measure* intelligence.
+
+---
+
+### TODO: Particle Simulator
+- [ ] Add zoom and follow-cell functionality
+- [ ] Performance tuning to support 1,000 particles across 5 types at 30 FPS
+
+### TODO: Neural Cellular Automaton
+- [ ] Fix bug where mutation creates invalid neural network.
+- [ ] Count how long a cell stays in the survival zone (used as a fitness/reward bias)
+- [ ] Study the optimal mutation rate that supports adaptation to environmental changes
