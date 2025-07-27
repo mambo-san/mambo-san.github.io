@@ -58,7 +58,7 @@ Here we see two survival strategies:
 - `0a2106a5`: Age → (+2.37) → Move Right  
 - `00000004`: Bias → (–2.50) → Self (dud connection)
 
-I hadn’t planned for negative weights, but a bug allowed them — giving rise to accidental strategies like "move left when forward is __not__ crowded”
+I hadn’t planned for negative weights, but a bug allowed them — giving rise to accidental strategies like "move left when forward is __*not*__ crowded”
 
 > Even More Detailed Demo 
 
