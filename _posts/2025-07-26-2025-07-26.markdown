@@ -7,7 +7,7 @@ tags: Simulator devlog vibe_coding life javascript emergence pattern Neural Cell
 > Published a new simulator
 
 Since my last post, I've finally brought Neural Cellular Automata (NCA) to a presentable state.  
-[NCA Simulator](https://sandbox-science.com/particle-life){:target="blank"} now runs live on [Narco Neko Playground](https://narco-neko-playground.onrender.com/){:target="blank"}.
+[NCA Simulator](https://narco-neko-playground.onrender.com/nca_simulation/){:target="blank"} now runs live on [Narco Neko Playground](https://narco-neko-playground.onrender.com/){:target="blank"}.
 
 ![Alt Text](/asset/recording/2025_07/nca_donut_DNAs.gif)
 
