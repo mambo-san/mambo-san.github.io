@@ -1,0 +1,107 @@
+---
+title: "2025-07-27: NCA Simulator"
+#layout: default < -- Defined by front matter in _config.yml
+tags: Simulator devlog vibe_coding life javascript emergence pattern Neural Cellular Automata
+---
+
+> Published a new simulator
+
+Since my last post, I've finally brought Neural Cellular Automata (NCA) to a presentable state.  
+[NCA Simulator](https://sandbox-science.com/particle-life){:target="blank"} now runs live on [Narco Neko Playground](https://narco-neko-playground.onrender.com/){:target="blank"}.
+
+![Alt Text](/asset/recording/2025_07/nca_donut_DNAs.gif)
+
+
+> Overview
+
+This simulation aims to do nothing... except invite you to ponder intelligence and evolution.
+
+- Each colored cell represents an organism
+- Each cell receives a DNA string at generation 0
+- DNA defines a neural "brain" with:
+  - [x] SENSOR nodes: measure environment  
+  - [x] INNER nodes: internal urges  
+  - [x] ACTION nodes: move or stay
+- Colored area = Reproduction Zone
+- Longer time in the zone = higher reproduction chance
+- DNA mutates across generations
+
+> Quick Demo
+
+Below is a comparison between generation 10 and generation 100+:
+
+[![Alt Text](/asset/recording/2025_07/nca_center_comparison.gif)](/asset/recording/2025_07/nca_center_comparison.gif)
+
+In this system, early evolution is mostly luck. Cells with working brains that happen to move toward the survival zone reproduce.
+
+Later evolution is still luck — just more structured. Those born near the zone and able to hold position survive. Mutated misfits are left behind.
+
+> Slightly More Detailed Demo
+
+This time the survival zone is set to **Edge**.  
+Genome length is set to 2 (just 2 brain connections per cell):
+
+After ~30 generations:
+
+[![Alt Text](/asset/recording/2025_07/nca_edge_DNAs.gif)](/asset/recording/2025_07/nca_edge_DNAs.gif)
+
+Each cell has a **DNA signature**, based on structure only (not weights).  
+Cells with the same topology are grouped and colored identically.
+
+Here we see two survival strategies:
+
+**Green cells (move left):**
+- `052343b3`: Forward Density → (–1.18) → Move Left  
+- `0020dbce`: Bias → (+1.79) → Move Up
+
+**Blue-ish cells (move right):**
+- `0a2106a5`: Age → (+2.37) → Move Right  
+- `00000004`: Bias → (–2.50) → Self (dud connection)
+
+I hadn’t planned for negative weights, but a bug allowed them — giving rise to accidental strategies like "move left when forward is __not__ crowded”
+
+> Even More Detailed Demo 
+
+To survive in a more complex zone like a *donut*, cells need more neural connections — in other words, more brain power. Adding a few INNER neurons also helps.
+
+[![Alt Text](/asset/recording/2025_07/nca_donut_sample.png)](/asset/recording/2025_07/nca_donut_sample.png)
+
+With more neurons, a wider variety of survival strategies emerges.  
+More unique DNA structures = more colors.  
+But with complexity comes opacity: it's much harder to explain *why* a cell behaves a certain way without stepping through its logic.
+
+Below is a breakdown of the DNA for one of the highlighted cells in the image
+
+
+Legend: SENSOR → (weight) → TARGET
+
+- `0722735d`: Distance to South → (–0.25) → Move Down  
+- `0712c958`: Distance to South → (+1.43) → Inner Neuron 2  
+- `08230918`: Distance to West → (–2.32) → Move Left  
+- `0821ba14`: Distance to West → (+1.13) → Move Right  
+- `0822bba6`: Distance to West → (+1.17) → Move Down  
+- `021030c1`: Touching Wall → (–1.55) → Inner Neuron 0  
+- `0310d141`: Wall Proximity → (+1.59) → Inner Neuron 0  
+- `10236fdd`: Inner Neuron 0 → (–0.32) → Move Left  
+- `1020e6c7`: Inner Neuron 0 → (+2.01) → Move Up  
+- `10225410`: Inner Neuron 0 → (–0.86) → Move Down  
+- `111004b3`: Inner Neuron 1 → (–2.41) → Inner Neuron 0  
+- `1210df0e`: Inner Neuron 2 → (+1.86) → Inner Neuron 0  
+- `1210e26d`: Inner Neuron 2 → (+1.92) → Inner Neuron 0  
+- `12125c4d`: Inner Neuron 2 → (–0.70) → Inner Neuron 2  
+- `12129256`: Inner Neuron 2 → (+0.36) → Inner Neuron 2  
+
+Yeah, nah... Good luck understanding that.
+
+
+> TODOs ( if I ever revisit this project )
+- Prevent negative weights in encoded genes  
+- Add more interesting stats like gene entropy.
+- Track gene statistics across generations and graph them.
+- Add more SENSOR / ACTION node types  
+- Allow Reproduction Zone updates mid-simulation  
+- Add "Dead Zones" to reduce reproduction odds
+
+### Bonus pic for those who are still here
+
+![Alt Text](/asset/recording/2025_07/bonus_cheeto.jpg)
