@@ -1,0 +1,16 @@
+---
+title: "2025-09-20: Baked Baker going on break"
+#layout: default < -- Defined by front matter in _config.yml
+tags: diary
+---
+Once upon a time, there was a happy, baked baker living in Denver.
+But soon, the baked baker will become a normal baker, ready to[learn from the best](https://www.anpanman.jp/about/friends/4zvqlpab9ixejb6d.html){:target="blank"}. 
+
+Goodbye, quirky Denver. 
+![Alt Text](/asset/recording/2025_09/Denver_16th.jpg)
+
+Here’s my best drawing attempt to capture my life there:
+![Alt Text](/asset/recording/2025_09/Cheeto_mushroom.png)
+
+I hope some of you crack up when you see the mushroom cat inked on my ankle.
+
